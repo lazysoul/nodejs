@@ -2,6 +2,7 @@ FROM lazysoul/ubuntu:latest
 
 # Install NodeJS V12
 RUN apt-get update
+RUN apt-get -y install dialog apt-utils
 RUN apt-get -y install dirmngr apt-transport-https lsb-release ca-certificates
 RUN curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
 RUN apt-get -y install nodejs gcc g++ make
