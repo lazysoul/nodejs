@@ -13,6 +13,8 @@ RUN echo 'export NVM_DIR="$HOME/.nvm"'
 RUN echo '[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"'
 RUN echo '[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"'
 
+RUN nvm install --lts
+
 RUN npm install -g http-server
 
 # Add additional tools
